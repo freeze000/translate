@@ -6,7 +6,7 @@ Run command
 >composer install
 
 tests run
->./vendor/bin/phpunit --colors=auto --debug -v
+>./vendor/bin/phpunit --colors=auto --debug -v tests
 
 Put src/config.php file follow command:
 ```
