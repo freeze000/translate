@@ -52,7 +52,7 @@ class App
         $finalResponse = $parser->putFirstArray($wrappedResponse);
 
         $finalData = $parser->putArray($translateData, $finalResponse);
-        $jsonFinal = json_encode($finalData, JSON_UNESCAPED_UNICODE);
+        $jsonFinal = json_encode($finalData, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
         $fileStorage->write($jsonFinal);
     }
